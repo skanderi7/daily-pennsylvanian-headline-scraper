@@ -1,3 +1,7 @@
+# Explanation of Changes
+
+The original scraper was modified to now navigate to the “Podcasts” page ( https://www.thedp.com/section/podcasts) and scrape the title of the most recent podcast episode. This was done by changing the soup.find() function to account for the class of the headline (now 'standard-link') and the tag (h3) in which the most recent podcast is always posted under. The URL was also changed from "thedp.com" to "thedp.com/section/podcasts" to access directly the podcast page for evaluation.
+
 # Basic Git Scraper Template
 
 This template provides a starting point for **git scraping**—the technique of scraping data from websites and automatically committing it to a Git repository using workflows, [coined by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/).
